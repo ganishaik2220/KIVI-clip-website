@@ -623,10 +623,7 @@
        * If the section is still visible, restart immediately.
        */
       video.addEventListener('ended', () => {
-        if (isVisible) {
-          video.currentTime = 0;
-          attemptPlay();
-        }
+      video.pause();
       });
 
       /* ── IntersectionObserver at 50% threshold ────────── */
