@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KIVI CLIP Courses — Master the art of video editing, storytelling, reels, color grading and more." />
+  <title>KIVI CLIP Courses — Master the Art of Editing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="courses-page">
+
+  <!-- ====================================================
+       NAVIGATION — DARK
+  ==================================================== -->
+  <nav class="nav nav--dark" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="index.html" id="nav-logo" aria-label="KIVI CLIP Home">
+        <div class="nav-logo-mark">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2 2h5v12H2V2zm7 0l5 6-5 6V2z"/>
+          </svg>
+        </div>
+        <span class="nav-logo-text">KIVI CLIP</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html" id="nav-home">Home</a></li>
+        <li><a href="index.html#portfolio" id="nav-works">Works</a></li>
+        <li><a href="index.html#pricing" id="nav-pricing">Pricing</a></li>
+        <li><a href="courses.html" id="nav-courses">Courses</a></li>
+        <li><a href="index.html#about" id="nav-about">About</a></li>
+        <li><a href="index.html#ask" id="nav-ask">Ask</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <a href="index.html#ask">Enroll Now ›</a>
+      </div>
+
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================================================
+       COURSES HERO
+  ==================================================== -->
+  <section class="courses-hero" id="courses-hero" aria-label="Courses hero">
+    <img
+      class="courses-hero-media"
+      src="hero_bg.png"
+      alt="Professional editing workstation — master your craft"
+      loading="eager"
+      fetchpriority="high"
+    />
+    <div class="courses-hero-overlay" aria-hidden="true"></div>
+
+    <div class="courses-hero-content reveal">
+      <div class="hero-brand">
+        <span class="hero-brand-kivi" style="font-size:clamp(44px,6vw,80px);">Master the art</span>
+        <span class="hero-brand-clip" style="font-size:clamp(24px,3.5vw,42px); letter-spacing:0.04em;">of editing.</span>
+      </div>
+      <p class="hero-sub">Learn the craft. Build your style.</p>
+      <div class="btn-row">
+        <a href="#courses-grid" class="btn btn-blue" id="btn-explore-courses">Explore Courses</a>
+        <a href="#curriculum" class="btn btn-ghost" id="btn-view-curriculum">View Curriculum</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       COURSE SECTION: VIDEO EDITING FUNDAMENTALS
+  ==================================================== -->
+  <section class="course-section" id="editing" aria-label="Video editing course">
+    <div class="course-block">
+      <div class="course-block-media">
+        <img src="section2_bg.png" alt="Video editing fundamentals — timeline and tracks" loading="lazy" />
+      </div>
+      <div class="course-block-text reveal">
+        <p class="course-block-label">Foundation Course</p>
+        <h2 class="course-block-title">Video Editing Fundamentals</h2>
+        <p class="course-block-desc">
+          Start from zero and build professional-grade editing skills. Learn the full
+          editing workflow — from organising footage to delivering a polished, broadcast-ready file.
+          Master cuts, transitions, pacing, and rhythm.
+        </p>
+        <div class="btn-row" style="justify-content:flex-start;">
+          <a href="index.html#ask" class="btn btn-blue" id="btn-course-editing">Enroll Now</a>
+          <a href="#curriculum" class="btn btn-white-outline" id="btn-course-editing-curr">See Curriculum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       COURSE SECTION: STORYTELLING & FILMMAKING
+  ==================================================== -->
+  <section class="course-section" id="storytelling" aria-label="Storytelling course">
+    <div class="course-block course-block--reverse">
+      <div class="course-block-media">
+        <img src="section3_bg.png" alt="Storytelling and filmmaking craft" loading="lazy" />
+      </div>
+      <div class="course-block-text reveal">
+        <p class="course-block-label">Craft Series</p>
+        <h2 class="course-block-title">The Art of Visual Storytelling</h2>
+        <p class="course-block-desc">
+          Great editing starts with understanding story. Learn how to construct an emotional arc,
+          use music and silence, build tension, and cut in a way that moves your audience.
+          Applicable to any genre — documentary, drama, corporate, or branded content.
+        </p>
+        <div class="btn-row" style="justify-content:flex-start;">
+          <a href="index.html#ask" class="btn btn-blue" id="btn-course-story">Enroll Now</a>
+          <a href="#curriculum" class="btn btn-white-outline" id="btn-course-story-curr">See Curriculum</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       COURSES GRID (6 tiles)
+  ==================================================== -->
+  <section class="courses-grid-section" id="courses-grid" aria-label="All courses">
+    <div class="section-header reveal">
+      <p class="section-label" style="color:#2997ff;">All Courses</p>
+      <h2 class="section-title section-title--white">Every skill, every style.</h2>
+      <p class="section-desc section-desc--white">Six focused courses. One complete creative skill set.</p>
+    </div>
+
+    <div class="courses-tiles" id="curriculum">
+
+      <!-- Tile 1: Video Editing -->
+      <article class="course-tile" id="course-tile-editing">
+        <img class="course-tile-media" src="tile1.png" alt="Video editing course" loading="lazy" />
+        <div class="course-tile-content">
+          <h3 class="course-tile-title">Video Editing Mastery</h3>
+          <a href="index.html#ask" class="btn btn-blue" id="btn-ctile-editing" style="font-size:12px;height:30px;padding:0 14px;">Enroll</a>
+        </div>
+      </article>
+
+      <!-- Tile 2: Reels Mastery -->
+      <article class="course-tile" id="course-tile-reels">
+        <img class="course-tile-media" src="tile3.png" alt="Reels and short-form content course" loading="lazy" />
+        <div class="course-tile-content">
+          <h3 class="course-tile-title">Reels &amp; Short-Form Mastery</h3>
+          <a href="index.html#ask" class="btn btn-blue" id="btn-ctile-reels" style="font-size:12px;height:30px;padding:0 14px;">Enroll</a>
+        </div>
+      </article>
+
+      <!-- Tile 3: Production -->
+      <article class="course-tile" id="course-tile-production">
+        <img class="course-tile-media" src="tile2.png" alt="Video production course" loading="lazy" />
+        <div class="course-tile-content">
+          <h3 class="course-tile-title">Video Production Essentials</h3>
+          <a href="index.html#ask" class="btn btn-blue" id="btn-ctile-production" style="font-size:12px;height:30px;padding:0 14px;">Enroll</a>
+        </div>
+      </article>
+
+      <!-- Tile 4: Color Grading -->
+      <article class="course-tile tile-grad-1" id="course-tile-color">
+        <div class="course-tile-content" style="background:none; padding-top:20px; top:0; bottom:auto;">
+          <h3 class="course-tile-title">Color Grading &amp; LUTs</h3>
+        </div>
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;" aria-hidden="true">
+          <!-- Color grading icon -->
+          <svg width="120" height="90" viewBox="0 0 120 90" fill="none" opacity="0.2">
+            <circle cx="40" cy="45" r="28" fill="#e63946" opacity="0.6"/>
+            <circle cx="60" cy="45" r="28" fill="#06d6a0" opacity="0.6"/>
+            <circle cx="80" cy="45" r="28" fill="#118ab2" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="course-tile-content">
+          <a href="index.html#ask" class="btn btn-blue" id="btn-ctile-color" style="font-size:12px;height:30px;padding:0 14px;">Enroll</a>
+        </div>
+      </article>
+
+      <!-- Tile 5: Motion Graphics -->
+      <article class="course-tile tile-grad-3" id="course-tile-motion">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;" aria-hidden="true">
+          <svg width="100" height="100" viewBox="0 0 100 100" fill="none" opacity="0.2">
+            <rect x="20" y="30" width="60" height="40" rx="4" stroke="white" stroke-width="2"/>
+            <line x1="35" y1="30" x2="35" y2="70" stroke="white" stroke-width="1" opacity="0.5"/>
+            <line x1="50" y1="30" x2="50" y2="70" stroke="white" stroke-width="1" opacity="0.5"/>
+            <line x1="65" y1="30" x2="65" y2="70" stroke="white" stroke-width="1" opacity="0.5"/>
+            <circle cx="35" cy="42" r="5" fill="white" opacity="0.5"/>
+            <circle cx="50" cy="55" r="5" fill="white" opacity="0.5"/>
+            <circle cx="65" cy="38" r="5" fill="white" opacity="0.5"/>
+            <path d="M35 42 Q42 48 50 55 Q57 62 65 38" stroke="white" stroke-width="1.5" fill="none"/>
+          </svg>
+        </div>
+        <div class="course-tile-content" style="background:none;top:0;bottom:auto;padding-top:20px;">
+          <h3 class="course-tile-title">Motion Graphics Basics</h3>
+        </div>
+        <div class="course-tile-content">
+          <a href="index.html#ask" class="btn btn-blue" id="btn-ctile-motion" style="font-size:12px;height:30px;padding:0 14px;">Enroll</a>
+        </div>
+      </article>
+
+      <!-- Tile 6: Creative Workflow -->
+      <article class="course-tile tile-grad-2" id="course-tile-workflow">
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;" aria-hidden="true">
+          <svg width="100" height="80" viewBox="0 0 100 80" fill="none" opacity="0.2">
+            <rect x="10" y="10" width="30" height="20" rx="3" fill="white" opacity="0.4"/>
+            <rect x="60" y="10" width="30" height="20" rx="3" fill="white" opacity="0.4"/>
+            <rect x="35" y="50" width="30" height="20" rx="3" fill="white" opacity="0.4"/>
+            <line x1="25" y1="30" x2="50" y2="50" stroke="white" stroke-width="1.5"/>
+            <line x1="75" y1="30" x2="50" y2="50" stroke="white" stroke-width="1.5"/>
+          </svg>
+        </div>
+        <div class="course-tile-content" style="background:none;top:0;bottom:auto;padding-top:20px;">
+          <h3 class="course-tile-title">Creative Workflow &amp; Freelancing</h3>
+        </div>
+        <div class="course-tile-content">
+          <a href="index.html#ask" class="btn btn-blue" id="btn-ctile-workflow" style="font-size:12px;height:30px;padding:0 14px;">Enroll</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       COURSE CTA
+  ==================================================== -->
+  <section class="course-cta-section" id="courses-cta" aria-label="Enroll now">
+    <div class="course-cta-bg" aria-hidden="true"></div>
+
+    <!-- Decorative gradient orbs -->
+    <div style="position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(0,113,227,0.15) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none;" aria-hidden="true"></div>
+
+    <div class="course-cta-content reveal">
+      <p class="section-label" style="color:#2997ff; margin-bottom:14px;">Ready to level up?</p>
+      <h2 class="cta-final-title" style="font-size:clamp(36px,5vw,64px);">Start learning today.</h2>
+      <p class="cta-final-sub">Join hundreds of editors who've transformed their craft with KIVI CLIP.</p>
+      <div class="btn-row" style="justify-content:center; margin-top:10px;">
+        <a href="index.html#ask" class="btn btn-blue" id="btn-courses-enroll">Enroll Now</a>
+        <a href="#curriculum" class="btn btn-white-outline" id="btn-courses-curriculum">View Curriculum</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>Courses</h4>
+        <ul>
+          <li><a href="#editing">Video Editing</a></li>
+          <li><a href="#storytelling">Storytelling</a></li>
+          <li><a href="#courses-grid">Reels Mastery</a></li>
+          <li><a href="#courses-grid">Color Grading</a></li>
+          <li><a href="#courses-grid">Motion Graphics</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="index.html#services">Video Editing</a></li>
+          <li><a href="index.html#services">Video Production</a></li>
+          <li><a href="index.html#services">Reels &amp; Short-Form</a></li>
+          <li><a href="index.html#services">Event Films</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#portfolio">Our Work</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#ask">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Behance</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2024 KIVI CLIP. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================
+       JAVASCRIPT
+  ==================================================== -->
+  <script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    // Mobile hamburger
+    const hamburger = document.getElementById('nav-hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Reveal on scroll
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

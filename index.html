@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="KIVI CLIP — Premium video editing, production, and storytelling services. From raw footage to a finished film." />
+  <title>KIVI CLIP — Video Editing &amp; Production Services</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Inline overrides for Inter font when SF Pro unavailable */
+    :root { --font: -apple-system, "SF Pro Display", "SF Pro Text", "Inter", "Helvetica Neue", Arial, sans-serif; }
+  </style>
+</head>
+<body>
+
+  <!-- ====================================================
+       NAVIGATION
+  ==================================================== -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a class="nav-logo" href="#hero" id="nav-logo" aria-label="KIVI CLIP Home">
+        <div class="nav-logo-mark">
+          <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M2 2h5v12H2V2zm7 0l5 6-5 6V2z"/>
+          </svg>
+        </div>
+        <span class="nav-logo-text">KIVI CLIP</span>
+      </a>
+
+      <!-- Links -->
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="#hero" id="nav-home">Home</a></li>
+        <li><a href="works.html" id="nav-works">Works</a></li>
+        <li><a href="#pricing" id="nav-pricing">Pricing</a></li>
+        <li><a href="courses.html" id="nav-courses">Courses</a></li>
+        <li><a href="#about" id="nav-about">About</a></li>
+        <li><a href="#ask" id="nav-ask">Ask</a></li>
+      </ul>
+
+      <!-- Ask CTA -->
+      <div class="nav-cta">
+        <a href="#ask" id="nav-ask-cta">Ask ›</a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ====================================================
+       SECTION 1 — HERO (Full Viewport)
+       ─────────────────────────────────────────────────
+       VIDEO CONFIGURATION — edit these two attributes:
+         src="videos/hero_video1.mp4"   ← place your MP4 here
+         poster="hero_bg.png"           ← poster shown while loading
+  ==================================================== -->
+  <section class="hero" id="hero" aria-label="Hero — KIVI CLIP">
+    <video
+      id="hero-video-1"
+      class="hero-media"
+      src="videos/hero_video1.mp4"
+      poster="hero_bg.png"
+      muted
+      playsinline
+      preload="metadata"
+      aria-label="Cinematic video editing workstation — KIVI CLIP hero"
+    ></video>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content reveal">
+      <div class="hero-brand">
+        <span class="hero-brand-kivi">KIVI</span>
+        <span class="hero-brand-clip">CLIP</span>
+      </div>
+      <p class="hero-sub">Welcome to a world of better storytelling.</p>
+      <div class="btn-row">
+        <!--
+          WHATSAPP CONFIGURATION
+          Replace the number below (91XXXXXXXXXX) with your real WhatsApp number
+          including country code, no spaces or dashes. Example: 919876543210
+        -->
+        <a
+          href="https://wa.me/91XXXXXXXXXX?text=Hi%20KIVI%20CLIP!%20I'm%20interested%20in%20your%20services.%20Could%20you%20share%20more%20details%3F"
+          class="btn btn-blue btn-hero-cta"
+          id="btn-hero-message"
+          target="_blank"
+          rel="noopener noreferrer"
+        >Click Here to Message</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 2 — FULL-WIDTH VIDEO SHOWCASE
+       ─────────────────────────────────────────────────
+       VIDEO CONFIGURATION — edit these two attributes:
+         src="videos/hero_video2.mp4"   ← place your MP4 here
+         poster="section2_bg.png"       ← poster shown while loading
+  ==================================================== -->
+  <section class="section-video-showcase" id="video-showcase" aria-label="Editing showcase">
+    <video
+      id="hero-video-2"
+      class="section-media"
+      src="videos/hero_video2.mp4"
+      poster="section2_bg.png"
+      muted
+      playsinline
+      preload="metadata"
+      aria-label="Cinematic editing process showcase — KIVI CLIP"
+    ></video>
+    <div class="section-overlay" aria-hidden="true"></div>
+
+    <div class="section-content reveal">
+      <h2 class="section-headline">Every frame tells a story.</h2>
+      <p class="section-sub">From raw footage to a finished film.</p>
+      <div class="btn-row">
+        <a href="works.html" class="btn btn-blue" id="btn-explore-work">Explore Our Work</a>
+        <a href="#ask" class="btn btn-ghost" id="btn-start-project-1">Start a Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 3 — FULL-WIDTH FEATURE IMAGE
+  ==================================================== -->
+  <section class="section-feature-image" id="feature-image" aria-label="Production showcase">
+    <img
+      class="section-media"
+      src="section3_bg.png"
+      alt="Professional film production on location"
+      loading="lazy"
+    />
+    <div class="section-overlay" aria-hidden="true"></div>
+
+    <div class="section-content reveal">
+      <h2 class="section-headline" style="color:#1d1d1f;">Made to move you.</h2>
+      <p class="section-sub" style="color:rgba(0,0,0,0.65);">Creative video production, shaped around your story.</p>
+      <div class="btn-row">
+        <a href="#services" class="btn btn-blue" id="btn-explore-services-3">Explore Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 4 — SERVICES GRID (Apple two-column tiles)
+  ==================================================== -->
+  <section class="services-grid" id="services" aria-label="Services">
+
+    <!-- Tile 1: Video Editing -->
+    <article class="service-tile" id="tile-editing">
+      <img class="tile-media" src="tile1.png" alt="Professional video editing" loading="lazy" />
+      <div class="tile-overlay" aria-hidden="true"></div>
+      <div class="tile-content">
+        <h3 class="tile-title">Every cut matters.</h3>
+        <p class="tile-sub">Video Editing</p>
+        <a href="#ask" class="btn btn-blue" id="btn-tile-editing">Explore Editing</a>
+      </div>
+    </article>
+
+    <!-- Tile 2: Video Production -->
+    <article class="service-tile" id="tile-production">
+      <img class="tile-media" src="tile2.png" alt="Video production behind the scenes" loading="lazy" />
+      <div class="tile-overlay" aria-hidden="true"></div>
+      <div class="tile-content">
+        <h3 class="tile-title">From idea to frame.</h3>
+        <p class="tile-sub">Video Production</p>
+        <a href="#ask" class="btn btn-blue" id="btn-tile-production">Explore Production</a>
+      </div>
+    </article>
+
+    <!-- Tile 3: Reels & Short-Form -->
+    <article class="service-tile" id="tile-reels">
+      <img class="tile-media" src="tile3.png" alt="Short-form reels and social content" loading="lazy" />
+      <div class="tile-overlay" aria-hidden="true"></div>
+      <div class="tile-content">
+        <h3 class="tile-title">Short. Powerful. Memorable.</h3>
+        <p class="tile-sub">Reels &amp; Short-Form</p>
+        <a href="#ask" class="btn btn-blue" id="btn-tile-reels">Explore Reels</a>
+      </div>
+    </article>
+
+    <!-- Tile 4: YouTube & Long-Form (gradient placeholder) -->
+    <article class="service-tile tile-grad-1" id="tile-youtube">
+      <div class="tile-overlay--bottom tile-overlay" aria-hidden="true"></div>
+      <div class="tile-content tile-content--bottom" style="top:auto; bottom:0; padding-top:0;">
+        <h3 class="tile-title">Built for the bigger story.</h3>
+        <p class="tile-sub">YouTube &amp; Long-Form</p>
+        <a href="#ask" class="btn btn-blue" id="btn-tile-youtube">Explore Videos</a>
+      </div>
+      <!-- Decorative visual element -->
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;" aria-hidden="true">
+        <svg width="120" height="80" viewBox="0 0 120 80" fill="none" opacity="0.15">
+          <rect x="4" y="4" width="112" height="72" rx="8" stroke="white" stroke-width="2"/>
+          <rect x="16" y="20" width="88" height="6" rx="3" fill="white" opacity="0.6"/>
+          <rect x="16" y="32" width="64" height="4" rx="2" fill="white" opacity="0.4"/>
+          <rect x="16" y="42" width="80" height="4" rx="2" fill="white" opacity="0.3"/>
+          <rect x="16" y="54" width="40" height="4" rx="2" fill="white" opacity="0.2"/>
+          <circle cx="96" cy="56" r="10" fill="white" opacity="0.1"/>
+          <polygon points="92,51 92,61 101,56" fill="white" opacity="0.5"/>
+        </svg>
+      </div>
+    </article>
+
+    <!-- Tile 5: Event Films (gradient placeholder) -->
+    <article class="service-tile tile-grad-2" id="tile-events">
+      <div class="tile-overlay--bottom tile-overlay" aria-hidden="true"></div>
+      <div class="tile-content tile-content--bottom">
+        <h3 class="tile-title">Moments, beautifully captured.</h3>
+        <p class="tile-sub">Event Films</p>
+        <a href="#ask" class="btn btn-blue" id="btn-tile-events">Explore Events</a>
+      </div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;" aria-hidden="true">
+        <svg width="100" height="100" viewBox="0 0 100 100" fill="none" opacity="0.15">
+          <circle cx="50" cy="50" r="42" stroke="white" stroke-width="2"/>
+          <path d="M50 20 L53 38 L70 30 L58 44 L76 47 L58 54 L70 68 L53 62 L50 80 L47 62 L30 68 L42 54 L24 47 L42 44 L30 30 L47 38 Z" fill="white" opacity="0.3"/>
+        </svg>
+      </div>
+    </article>
+
+    <!-- Tile 6: Creative Projects (gradient placeholder) -->
+    <article class="service-tile tile-grad-3" id="tile-creative">
+      <div class="tile-overlay--bottom tile-overlay" aria-hidden="true"></div>
+      <div class="tile-content tile-content--bottom">
+        <h3 class="tile-title">Your vision, our craft.</h3>
+        <p class="tile-sub">Creative Projects</p>
+        <a href="#ask" class="btn btn-blue" id="btn-tile-creative">View Projects</a>
+      </div>
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none;" aria-hidden="true">
+        <svg width="110" height="80" viewBox="0 0 110 80" fill="none" opacity="0.15">
+          <path d="M10 60 Q30 20 55 40 Q80 60 100 20" stroke="white" stroke-width="2" fill="none"/>
+          <circle cx="55" cy="40" r="6" fill="white" opacity="0.4"/>
+          <circle cx="10" cy="60" r="4" fill="white" opacity="0.3"/>
+          <circle cx="100" cy="20" r="4" fill="white" opacity="0.3"/>
+          <rect x="20" y="50" width="70" height="2" rx="1" fill="white" opacity="0.2"/>
+        </svg>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- ====================================================
+       SECTION 5 — FEATURED WORK / PORTFOLIO
+  ==================================================== -->
+  <section class="portfolio-section" id="portfolio" aria-label="Featured work">
+    <div class="section-header reveal">
+      <p class="section-label">Featured Work</p>
+      <h2 class="section-title">Stories we've told.</h2>
+      <p class="section-desc">A curated selection of our best work across editing, production, and creative projects.</p>
+    </div>
+
+    <div class="portfolio-scroll" id="portfolio-scroll" role="list" aria-label="Portfolio gallery">
+      <div class="portfolio-track" id="portfolio-track">
+
+        <div class="portfolio-item" role="listitem">
+          <img src="hero_bg.png" alt="Cinematic editing workstation — Featured edit" loading="lazy" />
+          <div class="portfolio-label">Cinematic Edit · 2024</div>
+        </div>
+
+        <div class="portfolio-item" role="listitem">
+          <img src="section2_bg.png" alt="Timeline editing — Short film project" loading="lazy" />
+          <div class="portfolio-label">Short Film · 2024</div>
+        </div>
+
+        <div class="portfolio-item" role="listitem">
+          <img src="section3_bg.png" alt="Film production — On location shoot" loading="lazy" />
+          <div class="portfolio-label">Brand Film · 2024</div>
+        </div>
+
+        <div class="portfolio-item" role="listitem">
+          <img src="tile1.png" alt="Video editing — Wedding highlight reel" loading="lazy" />
+          <div class="portfolio-label">Event Highlight · 2024</div>
+        </div>
+
+        <div class="portfolio-item" role="listitem">
+          <img src="tile2.png" alt="Behind the scenes production" loading="lazy" />
+          <div class="portfolio-label">Production BTS · 2024</div>
+        </div>
+
+        <div class="portfolio-item" role="listitem">
+          <img src="tile3.png" alt="Social media reels content" loading="lazy" />
+          <div class="portfolio-label">Reels Campaign · 2024</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="portfolio-footer reveal">
+      <a href="works.html" class="link-more" id="btn-view-all-work">View All Work</a>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 6 — PRICING
+  ==================================================== -->
+  <section class="pricing-section" id="pricing" aria-label="Pricing">
+    <div class="section-header reveal">
+      <p class="section-label">Pricing</p>
+      <h2 class="section-title">Simple, transparent pricing.</h2>
+      <p class="section-desc">Every project is unique. Contact us for a custom quote tailored to your needs.</p>
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card reveal" id="pricing-reels">
+        <p class="pricing-name">Reels &amp; Short-Form</p>
+        <div class="pricing-price">₹—</div>
+        <p class="pricing-price-note">Per video · Price on request</p>
+        <ul class="pricing-features">
+          <li>Up to 60 seconds</li>
+          <li>Color grading</li>
+          <li>Music licensing</li>
+          <li>2 revision rounds</li>
+          <li>720p / 1080p delivery</li>
+        </ul>
+        <a href="#ask" class="btn btn-blue-outline" id="btn-pricing-reels">Get a Quote</a>
+      </div>
+
+      <div class="pricing-card pricing-card--featured reveal" id="pricing-editing">
+        <span class="pricing-badge">Most Popular</span>
+        <p class="pricing-name">Video Editing</p>
+        <div class="pricing-price">₹—</div>
+        <p class="pricing-price-note">Per project · Price on request</p>
+        <ul class="pricing-features">
+          <li>Full edit from raw footage</li>
+          <li>Color grading &amp; LUT</li>
+          <li>Sound design</li>
+          <li>Unlimited revisions</li>
+          <li>4K delivery</li>
+        </ul>
+        <a href="#ask" class="btn btn-blue" id="btn-pricing-editing">Get a Quote</a>
+      </div>
+
+      <div class="pricing-card reveal" id="pricing-long">
+        <p class="pricing-name">Long-Form Video</p>
+        <div class="pricing-price">₹—</div>
+        <p class="pricing-price-note">Per video · Price on request</p>
+        <ul class="pricing-features">
+          <li>10–60 minute videos</li>
+          <li>Chapter markers</li>
+          <li>Color grading</li>
+          <li>Subtitles &amp; captions</li>
+          <li>YouTube-ready export</li>
+        </ul>
+        <a href="#ask" class="btn btn-blue-outline" id="btn-pricing-long">Get a Quote</a>
+      </div>
+
+      <div class="pricing-card reveal" id="pricing-production">
+        <p class="pricing-name">Video Production</p>
+        <div class="pricing-price">₹—</div>
+        <p class="pricing-price-note">Per day · Price on request</p>
+        <ul class="pricing-features">
+          <li>Professional camera crew</li>
+          <li>Lighting setup</li>
+          <li>Direction &amp; scripting</li>
+          <li>On-location filming</li>
+          <li>Includes post-production</li>
+        </ul>
+        <a href="#ask" class="btn btn-blue-outline" id="btn-pricing-production">Get a Quote</a>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ====================================================
+       SECTION 7 — ABOUT
+  ==================================================== -->
+  <section class="about-section" id="about" aria-label="About KIVI CLIP">
+    <div class="about-visual">
+      <img src="section3_bg.png" alt="Film production set — KIVI CLIP" loading="lazy" />
+    </div>
+    <div class="about-text reveal">
+      <p class="about-label">About</p>
+      <h2 class="about-title">Good stories deserve great editing.</h2>
+      <p class="about-desc">
+        From planning and production to the final edit, KIVI CLIP helps bring ideas to life.
+        We work with brands, creators, and filmmakers who believe that great storytelling
+        starts with great craft.
+      </p>
+      <div class="btn-row" style="justify-content:flex-start;">
+        <a href="#ask" class="btn btn-blue" id="btn-about-contact">Work With Us</a>
+        <a href="courses.html" class="btn btn-blue-outline" id="btn-about-courses">Explore Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FINAL CTA
+  ==================================================== -->
+  <section class="cta-final" id="ask" aria-label="Contact KIVI CLIP">
+    <img class="cta-final-bg" src="hero_bg.png" alt="" aria-hidden="true" loading="lazy" />
+    <div class="cta-final-content reveal">
+      <h2 class="cta-final-title">Have a story to tell?</h2>
+      <p class="cta-final-sub">Let's create something you'll be proud of.</p>
+      <div class="btn-row">
+        <a href="https://wa.me/91XXXXXXXXXX" class="btn btn-blue" id="btn-start-project-final" target="_blank" rel="noopener noreferrer">Start a Project</a>
+        <a href="courses.html" class="btn btn-white-outline" id="btn-explore-courses-final">Explore Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#services">Video Editing</a></li>
+          <li><a href="#services">Video Production</a></li>
+          <li><a href="#services">Reels &amp; Short-Form</a></li>
+          <li><a href="#services">YouTube &amp; Long-Form</a></li>
+          <li><a href="#services">Event Films</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Learn</h4>
+        <ul>
+          <li><a href="courses.html">All Courses</a></li>
+          <li><a href="courses.html#editing">Video Editing</a></li>
+          <li><a href="courses.html#storytelling">Storytelling</a></li>
+          <li><a href="courses.html#reels">Reels Mastery</a></li>
+          <li><a href="courses.html#color">Color Grading</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About KIVI CLIP</a></li>
+          <li><a href="#portfolio">Our Work</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#ask">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Behance</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">Copyright &copy; 2024 KIVI CLIP. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================
+       JAVASCRIPT
+  ==================================================== -->
+  <script>
+    'use strict';
+
+    /* ══════════════════════════════════════════════════════
+       SECTION A — SMOOTH SCROLL (internal hash links only)
+    ══════════════════════════════════════════════════════ */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        const target = document.querySelector(anchor.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* ══════════════════════════════════════════════════════
+       SECTION B — MOBILE HAMBURGER
+    ══════════════════════════════════════════════════════ */
+    const hamburger = document.getElementById('nav-hamburger');
+    const navLinks  = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    /* ══════════════════════════════════════════════════════
+       SECTION C — REVEAL-ON-SCROLL (.reveal elements)
+    ══════════════════════════════════════════════════════ */
+    const revealEls = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ══════════════════════════════════════════════════════
+       SECTION D — PORTFOLIO DRAG-SCROLL
+    ══════════════════════════════════════════════════════ */
+    const scrollEl = document.getElementById('portfolio-scroll');
+    let isDown = false, startX, scrollLeft;
+
+    scrollEl.addEventListener('mousedown', e => {
+      isDown = true;
+      scrollEl.style.cursor = 'grabbing';
+      startX     = e.pageX - scrollEl.offsetLeft;
+      scrollLeft = scrollEl.scrollLeft;
+    });
+    scrollEl.addEventListener('mouseleave', () => { isDown = false; scrollEl.style.cursor = 'grab'; });
+    scrollEl.addEventListener('mouseup',    () => { isDown = false; scrollEl.style.cursor = 'grab'; });
+    scrollEl.addEventListener('mousemove',  e => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - scrollEl.offsetLeft;
+      scrollEl.scrollLeft = scrollLeft - (x - startX) * 1.5;
+    });
+
+    /* ══════════════════════════════════════════════════════
+       SECTION E — NAV BACKGROUND ON SCROLL
+    ══════════════════════════════════════════════════════ */
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.style.background = window.scrollY > 10
+        ? 'rgba(255,255,255,0.92)'
+        : 'rgba(255,255,255,0.85)';
+    }, { passive: true });
+
+    /* ══════════════════════════════════════════════════════
+       SECTION F — HERO VIDEO PLAYBACK ENGINE
+       ──────────────────────────────────────────────────────
+       Behaviour per video:
+         • Visible (≥50% in viewport) → reset to 0, play
+         • Reaches end while visible  → restart from 0
+         • Scrolled away (<50%)       → pause
+         • Returns to view            → reset to 0, play again
+       Only hero-video-1 and hero-video-2 are managed here.
+       Portfolio images and other elements are unaffected.
+    ══════════════════════════════════════════════════════ */
+
+    // Respect prefers-reduced-motion: if set, skip autoplay entirely.
+    const prefersReducedMotion =
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    /**
+     * Creates an independent playback controller for one hero video.
+     * @param {string} videoId  — the id of the <video> element
+     */
+    function createHeroVideoController(videoId) {
+      const video = document.getElementById(videoId);
+      if (!video) return; // Guard: element must exist
+
+      // State flags to prevent duplicate play calls / race conditions
+      let isVisible    = false;   // Is the section ≥50% in viewport?
+      let playPending  = false;   // Has play() been called and not yet resolved?
+
+      /**
+       * Attempt to play the video. Handles the Promise returned by play()
+       * so unhandled rejection warnings never appear in the console.
+       */
+      function attemptPlay() {
+        if (prefersReducedMotion) return;
+        if (playPending) return;           // Don't stack multiple play calls
+        if (!video.paused) return;         // Already playing
+
+        playPending = true;
+        const promise = video.play();
+
+        if (promise !== undefined) {
+          promise
+            .then(() => { playPending = false; })
+            .catch(err => {
+              playPending = false;
+              // Autoplay was blocked (e.g. strict browser policy).
+              // The poster image is already visible — no broken UI.
+              if (err.name !== 'AbortError') {
+                console.info('[KIVI CLIP] Video autoplay blocked for', videoId, '—', err.message);
+              }
+            });
+        } else {
+          playPending = false;
+        }
+      }
+
+      /**
+       * Called when the section becomes visible (≥50% threshold).
+       * Always resets to the beginning and starts playback.
+       */
+      function onVisible() {
+        isVisible = true;
+        // Abort any in-progress play before resetting, to avoid AbortError
+        video.pause();
+        video.currentTime = 0;
+        attemptPlay();
+      }
+
+      /**
+       * Called when the section leaves the viewport (<50% visible).
+       */
+      function onHidden() {
+        isVisible = false;
+        video.pause();
+        // Do NOT reset currentTime here — reset happens on next onVisible()
+      }
+
+      /**
+       * 'ended' event: fires when the video reaches its natural end.
+       * If the section is still visible, restart immediately.
+       */
+      video.addEventListener('ended', () => {
+        if (isVisible) {
+          video.currentTime = 0;
+          attemptPlay();
+        }
+      });
+
+      /* ── IntersectionObserver at 50% threshold ────────── */
+      const sectionObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            onVisible();
+          } else {
+            onHidden();
+          }
+        });
+      }, {
+        threshold: 0.5   // 50% of the section must be in view
+      });
+
+      // Observe the video element's parent section for visibility
+      const section = video.closest('section');
+      if (section) {
+        sectionObserver.observe(section);
+      } else {
+        // Fallback: observe the video element itself
+        sectionObserver.observe(video);
+      }
+    }
+
+    // Initialise the two hero video controllers independently
+    createHeroVideoController('hero-video-1');
+    createHeroVideoController('hero-video-2');
+
+  </script>
+
+</body>
+</html>
