@@ -240,7 +240,7 @@ img, video {
   position: relative;
   z-index: 2;
   text-align: center;
-  color: var(--white);
+  color: #000000;
   padding: 0 20px 80px;
   max-width: 700px;
 }
@@ -257,21 +257,21 @@ img, video {
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1;
-  color: var(--white);
+  color: #000000;
 }
 
 .hero-brand-clip {
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 300;
   letter-spacing: 0.15em;
-  color: rgba(255,255,255,0.75);
+  color: #000000;
   margin-top: 2px;
 }
 
 .hero-sub {
   font-size: clamp(16px, 2.2vw, 21px);
   font-weight: 400;
-  color: rgba(255,255,255,0.85);
+  color: #000000;
   letter-spacing: 0.01em;
   margin-bottom: 28px;
 }
