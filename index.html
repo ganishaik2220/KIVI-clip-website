@@ -605,8 +605,7 @@
       function onVisible() {
         isVisible = true;
         // Abort any in-progress play before resetting, to avoid AbortError
-        video.pause();
-        video.currentTime = 0;
+       if(video.ended) return;
         attemptPlay();
       }
 
