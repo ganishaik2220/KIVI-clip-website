@@ -271,11 +271,12 @@ img, video {
 }
 
 .hero-brand-clip {
-  font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(14px, 2vw, 24px);
   font-weight: 300;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.10em;
   color: #000000;
-  margin-top: 2px;
+  margin-top: -8px;
+  line-height: 1;
 }
 
 .hero-sub {
