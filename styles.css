@@ -272,13 +272,18 @@ img, video {
    border-radius: 2px;
 }
 
+
 .hero-brand-clip {
-  font-size: clamp(14px, 2vw, 24px);
-  font-weight: 300;
-  letter-spacing: 0.10em;
-  color: #000000;
-  margin-top: -8px;
-  line-height: 1;
+    font-family: 'Michroma', sans-serif;
+    font-size: clamp(18px, 3vw, 34px);
+    font-weight: 400;
+    letter-spacing: 0.48em;
+    color: #1c242b;
+    margin-top: -4px;
+    line-height: 1.2;
+    text-align: center;
+    transform: scaleX(1.08);
+    transform-origin: center;
 }
 
 .hero-sub {
