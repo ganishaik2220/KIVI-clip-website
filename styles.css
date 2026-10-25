@@ -1363,16 +1363,16 @@ body.courses-page {
     margin: 0;
     text-align: center;
 }
-/* Quotation — bottom-right */
+
+/* Quotation — slightly higher, same horizontal position */
 .hero-sub {
     position: absolute;
     right: 5%;
-    bottom: 100px;
+    bottom: 140px;
     margin: 0;
     max-width: 350px;
-    text-align: right;
+    text-align: center;
 }
-
 /* Message button — bottom-right */
 .hero-content .btn-row {
     position: absolute;
