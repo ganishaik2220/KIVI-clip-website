@@ -1739,17 +1739,20 @@ body.courses-page {
   }
 }
 
-  #hero .hero-sub {
-    position: absolute;
-    top: 45%;
-    left: 8%;
-    right: 8%;
-    bottom: auto;
-    width: auto;
-    margin: 0;
-    text-align: center;
-    font-size: 15px;
-  }
+
+#hero .hero-sub {
+  position: absolute;
+  top: 47%;
+  left: 8%;
+  right: 8%;
+  bottom: auto;
+  width: auto;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  z-index: 2;
+} 
 
   #hero .hero-btn-row {
     position: absolute;
@@ -1799,16 +1802,22 @@ body.courses-page {
     white-space: nowrap;
   }
 
-  #hero .hero-brand-clip {
-    display: block;
-    width: 100%;
-    color: #252525;
-    text-align: center;
-    letter-spacing: 0.32em;
-    padding-left: 0.32em;
-    line-height: 1.2;
-    white-space: nowrap;
-    transform: scaleX(0.92);
-    transform-origin: center;
-  }
+  
+#hero .hero-brand-clip {
+  display: block;
+  width: 100%;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 1px #202830;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: clamp(12px, 3.5vw, 18px);
+  letter-spacing: 0.75em;
+  padding-left: 0.75em;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  transform: scaleX(1.08);
+  transform-origin: center;
+}
 }
