@@ -259,8 +259,9 @@ img, video {
   line-height: 1;
   background-colour: #16803C; 
   color: #FFFFFF;
-   padding: 4px 10px;
+   padding: 4px 12px;
    display: inline-block;
+   border-radius: 2px;
 }
 
 .hero-brand-clip {
