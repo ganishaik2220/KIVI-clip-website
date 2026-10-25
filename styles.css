@@ -1545,3 +1545,124 @@ body.courses-page {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =====================================================
+   KIVI CLIP — HERO POSITIONING UPDATE
+   Desktop + Mobile
+   ===================================================== */
+
+/* Desktop and laptop */
+#hero .hero-content {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  max-width: none;
+  padding: 0;
+  text-align: right;
+  display: block;
+}
+
+#hero .hero-brand {
+  position: absolute;
+  top: clamp(32px, 6vh, 72px);
+  left: clamp(24px, 6vw, 90px);
+  align-items: flex-start;
+  margin: 0;
+}
+
+#hero .hero-brand-kivi {
+  font-size: clamp(48px, 6vw, 82px);
+}
+
+#hero .hero-brand-clip {
+  font-size: clamp(24px, 3vw, 40px);
+}
+
+#hero .hero-sub {
+  position: absolute;
+  right: clamp(24px, 6vw, 90px);
+  bottom: 105px;
+  width: min(540px, 48%);
+  margin: 0;
+  text-align: right;
+}
+
+#hero .hero-btn-row {
+  position: absolute;
+  right: clamp(24px, 6vw, 90px);
+  bottom: 40px;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Mobile: iPhone and Android */
+@media (max-width: 768px) {
+  #hero .hero-content {
+    inset: 0;
+    padding: 0;
+    width: 100%;
+    max-width: none;
+  }
+
+  #hero .hero-brand {
+    top: clamp(28px, 7vh, 58px);
+    left: 6%;
+    right: auto;
+    align-items: flex-start;
+  }
+
+  #hero .hero-brand-kivi {
+    font-size: clamp(40px, 12vw, 64px);
+  }
+
+  #hero .hero-brand-clip {
+    font-size: clamp(21px, 6vw, 32px);
+  }
+
+  #hero .hero-sub {
+    left: 6%;
+    right: 6%;
+    bottom: 108px;
+    width: auto;
+    text-align: center;
+    font-size: clamp(14px, 3.8vw, 18px);
+    line-height: 1.45;
+    margin: 0;
+  }
+
+  #hero .hero-btn-row {
+    left: 5%;
+    right: 5%;
+    bottom: 30px;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  #hero .hero-btn-row .btn {
+    min-height: 42px;
+    height: auto;
+    padding: 10px 14px;
+    font-size: 12px;
+    white-space: normal;
+    text-align: center;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+  #hero .hero-sub {
+    bottom: 118px;
+    font-size: 14px;
+  }
+
+  #hero .hero-btn-row {
+    bottom: 24px;
+    gap: 6px;
+  }
+
+  #hero .hero-btn-row .btn {
+    padding: 9px 10px;
+    font-size: 11px;
+  }
+}
