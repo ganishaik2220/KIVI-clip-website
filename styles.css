@@ -1352,15 +1352,17 @@ body.courses-page {
 }
 
 /* KIVI CLIP logo — top-left */
+
+/* KIVI CLIP logo — upper-middle left */
 .hero-brand {
     position: absolute;
-    top: 8%;
-    left: 5%;
-    align-items: flex-start;
+    top: 30%;
+    left: 34%;
+    transform: translate(-50%, -50%);
+    align-items: center;
     margin: 0;
-    text-align: left;
+    text-align: center;
 }
-
 /* Quotation — bottom-right */
 .hero-sub {
     position: absolute;
