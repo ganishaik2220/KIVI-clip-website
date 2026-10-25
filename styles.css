@@ -237,12 +237,18 @@ img, video {
 }
 
 .hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: #000000;
-  padding: 0 20px 80px;
-  max-width: 700px;
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    text-align: center;
+    color: #000000;
+    padding: 0;
+    max-width: none;
+    pointer-events: none;
+}
+
+.hero-content .btn-row {
+    pointer-events: auto;
 }
 
 .hero-brand {
@@ -1341,4 +1347,55 @@ body.courses-page {
   .cta-final-content {
     padding: 60px 24px;
   }
+
+   
 }
+
+/* KIVI CLIP logo — top-left */
+.hero-brand {
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    align-items: flex-start;
+    margin: 0;
+    text-align: left;
+}
+
+/* Quotation — bottom-right */
+.hero-sub {
+    position: absolute;
+    right: 5%;
+    bottom: 100px;
+    margin: 0;
+    max-width: 350px;
+    text-align: right;
+}
+
+/* Message button — bottom-right */
+.hero-content .btn-row {
+    position: absolute;
+    right: 5%;
+    bottom: 40px;
+    margin: 0;
+    pointer-events: auto;
+}
+
+/* Mobile positioning */
+@media (max-width: 600px) {
+    .hero-brand {
+        top: 10%;
+        left: 5%;
+    }
+
+    .hero-sub {
+        right: 5%;
+        bottom: 90px;
+        max-width: 250px;
+    }
+
+    .hero-content .btn-row {
+        right: 5%;
+        bottom: 35px;
+    }
+}
+
