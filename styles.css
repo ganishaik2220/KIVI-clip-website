@@ -1666,3 +1666,73 @@ body.courses-page {
     font-size: 11px;
   }
 }
+
+
+
+/* KIVI CLIP — MOBILE HERO LAYOUT ONLY */
+@media (max-width: 768px) {
+  #hero {
+    position: relative;
+    overflow: hidden;
+  }
+
+  #hero .hero-content {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  #hero .hero-brand {
+    position: absolute;
+    top: 36%;
+    left: 0;
+    right: 0;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  #hero .hero-brand-kivi {
+    font-size: clamp(42px, 12vw, 64px);
+  }
+
+  #hero .hero-brand-clip {
+    font-size: clamp(22px, 6vw, 32px);
+  }
+
+  #hero .hero-sub {
+    position: absolute;
+    top: 45%;
+    left: 8%;
+    right: 8%;
+    bottom: auto;
+    width: auto;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  #hero .hero-btn-row {
+    position: absolute;
+    top: 53%;
+    left: 8%;
+    right: 8%;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  #hero .hero-btn-row .btn {
+    width: 100%;
+    min-height: 48px;
+    padding: 12px 14px;
+    font-size: 14px;
+    white-space: normal;
+  }
+}
