@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 /* ============================================================
    KIVI CLIP — Apple-Style Website CSS
    ============================================================ */
@@ -1725,18 +1726,22 @@ body.courses-page {
     white-space: nowrap;
   }
 
-  #hero .hero-brand-clip {
-    display: block;
-    width: 100%;
-    color: #252525;
-    text-align: center;
-    letter-spacing: 0.32em;
-    padding-left: 0.32em;
-    line-height: 1.2;
-    white-space: nowrap;
-    transform: scaleX(0.92);
-    transform-origin: center;
-  }
+ 
+#hero .hero-brand-clip {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Michroma', sans-serif;
+  font-size: clamp(12px, 3.2vw, 17px);
+  font-weight: 400;
+  color: #252525;
+  text-align: center;
+  letter-spacing: 0.48em;
+  padding-left: 0.48em;
+  line-height: 1.5;
+  white-space: nowrap;
+  transform: none;
+} 
 }
 
 
