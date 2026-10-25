@@ -1821,3 +1821,39 @@ body.courses-page {
   transform-origin: center;
 }
 }
+
+@media (max-width: 768px) {
+  #hero .hero-brand {
+    position: absolute !important;
+    top: 30% !important;
+    left: 5% !important;
+    right: 5% !important;
+    width: 90% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+    z-index: 5 !important;
+  }
+
+  #hero .hero-sub {
+    position: absolute !important;
+    top: 48% !important;
+    left: 8% !important;
+    right: 8% !important;
+    width: auto !important;
+    margin: 0 !important;
+    line-height: 1.5 !important;
+    text-align: center !important;
+    z-index: 2 !important;
+  }
+
+  #hero .hero-btn-row {
+    position: absolute !important;
+    top: 57% !important;
+    left: 8% !important;
+    right: 8% !important;
+    bottom: auto !important;
+    z-index: 2 !important;
+  }
+}
