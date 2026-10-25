@@ -1967,3 +1967,24 @@ body.courses-page {
     text-shadow: none !important;
   }
 }
+
+@media (max-width: 768px) {
+  #hero .hero-btn-row .btn:not(:last-child),
+  #hero .hero-btn-row .btn:not(:last-child) * {
+    color: #000000 !important;
+    -webkit-text-fill-color: #000000 !important;
+  }
+
+  #hero .hero-btn-row .btn:not(:last-child) {
+    background: rgba(255, 255, 255, 0.12) !important;
+    border: 1px solid rgba(255, 255, 255, 0.45) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  #hero .hero-btn-row .btn:last-child,
+  #hero .hero-btn-row .btn:last-child * {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+  }
+}
