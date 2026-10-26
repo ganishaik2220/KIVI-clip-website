@@ -1624,7 +1624,7 @@ body.courses-page {
   #hero .hero-sub {
     left: 6%;
     right: 6%;
-    bottom: 108px;
+    bottom: 140px;
     width: auto;
     text-align: center;
     font-size: clamp(14px, 3.8vw, 18px);
@@ -1635,7 +1635,7 @@ body.courses-page {
   #hero .hero-btn-row {
     left: 5%;
     right: 5%;
-    bottom: 30px;
+    bottom: 160px;
     justify-content: center;
     gap: 8px;
   }
@@ -1688,7 +1688,7 @@ body.courses-page {
 
   #hero .hero-brand {
     position: absolute;
-    top: 36%;
+    top: 32%;
     left: 0;
     right: 0;
     margin: 0;
@@ -1843,7 +1843,7 @@ body.courses-page {
 
   #hero .hero-sub {
     position: absolute !important;
-    top: 48% !important;
+    top: 40% !important;
     left: 8% !important;
     right: 8% !important;
     width: auto !important;
