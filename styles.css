@@ -2003,3 +2003,27 @@ body.courses-page {
     -webkit-text-fill-color: #ffffff !important;
   }
 }
+
+
+
+/* Mobile-only second video section */
+.mobile-second-video {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-second-video {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .mobile-second-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
