@@ -1617,7 +1617,7 @@ body.courses-page {
     font-size: clamp(40px, 12vw, 64px);
   }
 
-  #hero .hero-brand-clip {
+  #hero  {
     font-size: clamp(21px, 6vw, 32px);
   }
 
@@ -1891,14 +1891,24 @@ body.courses-page {
   }
 
   /* CLIP: small outlined letters */
-  #hero .hero-brand-clip {
-    font-size: clamp(12px, 3.5vw, 18px) !important;
-    color: transparent !important;
-    -webkit-text-fill-color: transparent !important;
-    -webkit-text-stroke: 1px #202830 !important;
-    letter-spacing: 0.55em !important;
-    padding-left: 0.55em !important;
-  }
+
+#hero .hero-brand-clip {
+  display: block !important;
+  width: 100% !important;
+  color: #252525 !important;
+  -webkit-text-fill-color: #252525 !important;
+  -webkit-text-stroke: 0 !important;
+  font-family: inherit !important;
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.45em !important;
+  padding-left: 0.45em !important;
+  line-height: 1.5 !important;
+  text-align: center !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+}
 
   /* Quote: black and fully readable */
   #hero .hero-sub {
