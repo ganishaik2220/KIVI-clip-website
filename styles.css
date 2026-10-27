@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 /* ============================================================
-   KIVI CLIP — Apple-Style Website CSS
+   KIVI clips — Apple-Style Website CSS
    ============================================================ */
 
 /* --- Reset & Base --- */
@@ -261,7 +261,7 @@ img, video {
   color: var(--white);
 }
 
-.hero-brand-clip {
+.hero-brand-clips {
   font-size: clamp(28px, 4vw, 48px);
   font-weight: 300;
   letter-spacing: 0.15em;
@@ -1367,7 +1367,7 @@ body.courses-page {
     font-size: clamp(44px, 14vw, 80px);
   }
 
-  .hero-brand-clip {
+  .hero-brand-clips {
     font-size: clamp(22px, 7vw, 40px);
   }
 
@@ -1507,7 +1507,7 @@ body.courses-page {
     font-size: clamp(40px, 13vw, 60px);
   }
 
-  .hero-brand-clip {
+  .hero-brand-clips {
     font-size: clamp(18px, 6vw, 30px);
   }
 
@@ -1534,7 +1534,7 @@ body.courses-page {
     font-size: 38px;
   }
 
-  .hero-brand-clip {
+  .hero-brand-clips {
     font-size: 18px;
   }
 
@@ -1549,7 +1549,7 @@ body.courses-page {
 
 
 /* =====================================================
-   KIVI CLIP — HERO POSITIONING UPDATE
+   KIVI clips — HERO POSITIONING UPDATE
    Desktop + Mobile
    ===================================================== */
 
@@ -1576,7 +1576,7 @@ body.courses-page {
   font-size: clamp(48px, 6vw, 82px);
 }
 
-#hero .hero-brand-clip {
+#hero .hero-brand-clips {
   font-size: clamp(24px, 3vw, 40px);
 }
 
@@ -1670,7 +1670,7 @@ body.courses-page {
 
 
 
-/* KIVI CLIP — MOBILE HERO LAYOUT ONLY */
+/* KIVI clips — MOBILE HERO LAYOUT ONLY */
 @media (max-width: 768px) {
   #hero {
     position: relative;
@@ -1701,7 +1701,7 @@ body.courses-page {
   }
 
 
-/* KIVI CLIP — MOBILE WORDMARK FIX */
+/* KIVI clips — MOBILE WORDMARK FIX */
 @media (max-width: 768px) {
   #hero .hero-brand {
     display: flex;
@@ -1727,7 +1727,7 @@ body.courses-page {
   }
 
  
-#hero .hero-brand-clip {
+#hero .hero-brand-clips {
   display: block;
   width: 100%;
   box-sizing: border-box;
@@ -1782,7 +1782,7 @@ body.courses-page {
 }
 
 
-/* KIVI CLIP — MOBILE WORDMARK FIX */
+/* KIVI clips — MOBILE WORDMARK FIX */
 @media (max-width: 768px) {
   #hero .hero-brand {
     display: flex;
@@ -1808,7 +1808,7 @@ body.courses-page {
   }
 
   
-#hero .hero-brand-clip {
+#hero .hero-brand-clips {
   display: block;
   width: 100%;
   color: transparent;
@@ -1890,9 +1890,9 @@ body.courses-page {
     background: #795035 !important;
   }
 
-  /* CLIP: small outlined letters */
+  /* clips: small outlined letters */
 
-#hero .hero-brand-clip {
+#hero .hero-brand-clips {
   display: block !important;
   width: 100% !important;
   color: #252525 !important;
