@@ -2087,3 +2087,21 @@ body.courses-page {
     visibility: visible !important;
   }
 }
+
+
+/* FORCE DESKTOP CLIP TEXT VISIBILITY */
+@media screen and (min-width: 769px) {
+  #hero .hero-brand .hero-brand-clip {
+    display: block !important;
+    color: #252525 !important;
+    -webkit-text-fill-color: #252525 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    font-family: 'Michroma', sans-serif !important;
+    font-size: 32px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.45em !important;
+    line-height: 1.5 !important;
+    text-shadow: none !important;
+  }
+}
