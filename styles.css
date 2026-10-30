@@ -2072,3 +2072,9 @@ body.courses-page {
   }
 
 }
+
+@media (min-width: 769px) {
+  #hero .hero-brand-clip {
+    color: #252525;
+  }
+}
