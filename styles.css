@@ -1,3 +1,11 @@
+/* ============================================================
+   KIVI CLIPS — ORGANIZED STYLESHEET
+   Compatibility pass: original declarations and cascade order
+   are preserved; only the malformed mobile media-query boundary
+   has been corrected. Keep base styles before responsive overrides.
+   ============================================================ */
+
+/* 1. SHARED + DESKTOP BASE STYLES (original order preserved) */
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 /* ============================================================
    KIVI clips — Apple-Style Website CSS
@@ -380,6 +388,7 @@ img, video {
   flex: 0 0 auto;
 }
 
+/* 2. TABLET + MOBILE RESPONSIVE OVERRIDES (original order preserved) */
 @media (max-width: 480px) {
   .hero-btn-row {
     flex-direction: column;
@@ -1699,7 +1708,7 @@ body.courses-page {
   #hero .hero-brand-kivi {
     font-size: clamp(42px, 12vw, 64px);
   }
-
+}
 
 /* KIVI clips — MOBILE WORDMARK FIX */
 @media (max-width: 768px) {
@@ -1745,19 +1754,20 @@ body.courses-page {
 }
 
 
-#hero .hero-sub {
-  position: absolute;
-  top: 47%;
-  left: 8%;
-  right: 8%;
-  bottom: auto;
-  width: auto;
-  margin: 0;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.5;
-  z-index: 2;
-} 
+@media (max-width: 768px) {
+  #hero .hero-sub {
+    position: absolute;
+    top: 47%;
+    left: 8%;
+    right: 8%;
+    bottom: auto;
+    width: auto;
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    z-index: 2;
+  }
 
   #hero .hero-btn-row {
     position: absolute;
