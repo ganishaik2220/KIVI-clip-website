@@ -2030,3 +2030,45 @@ body.courses-page {
     height: auto;
   }
 }
+
+
+/* =========================================
+   DESKTOP HERO — KIVI BRAND & BUTTON POSITION
+   Mobile layout remains untouched.
+========================================= */
+
+@media (min-width: 769px) {
+
+  #hero .hero-brand-kivi {
+    display: inline-block;
+    background: #795035;
+    color: #ffffff;
+    padding: 5px 18px 8px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+  }
+
+  /* Correct HTML class: singular "clip" */
+  #hero .hero-brand-clip {
+    display: block;
+    font-family: 'Michroma', sans-serif;
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 0.48em;
+    padding-left: 0.48em;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  /* Move subtitle slightly higher */
+  #hero .hero-sub {
+    bottom: 155px;
+  }
+
+  /* Move buttons higher */
+  #hero .hero-btn-row {
+    bottom: 85px;
+  }
+
+}
