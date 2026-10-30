@@ -1558,7 +1558,6 @@ body.courses-page {
   }
 }
 
-
 /* =====================================================
    KIVI clips — HERO POSITIONING UPDATE
    Desktop + Mobile
@@ -1679,8 +1678,6 @@ body.courses-page {
   }
 }
 
-
-
 /* KIVI clips — MOBILE HERO LAYOUT ONLY */
 @media (max-width: 768px) {
   #hero {
@@ -1737,7 +1734,6 @@ body.courses-page {
     white-space: nowrap;
   }
 
- 
 #hero .hero-brand-clips {
   display: block;
   width: 100%;
@@ -1752,9 +1748,8 @@ body.courses-page {
   line-height: 1.5;
   white-space: nowrap;
   transform: none;
-} 
 }
-
+}
 
 @media (max-width: 768px) {
   #hero .hero-sub {
@@ -1793,7 +1788,6 @@ body.courses-page {
   }
 }
 
-
 /* KIVI clips — MOBILE WORDMARK FIX */
 @media (max-width: 768px) {
   #hero .hero-brand {
@@ -1819,7 +1813,6 @@ body.courses-page {
     white-space: nowrap;
   }
 
-  
 #hero .hero-brand-clips {
   display: block;
   width: 100%;
@@ -2015,8 +2008,6 @@ body.courses-page {
     -webkit-text-fill-color: #ffffff !important;
   }
 }
-
-
 
 /* Mobile-only second video section */
 .mobile-second-video {
